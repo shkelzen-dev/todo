@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <script src="main.js" defer ></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div id="todo">TO-DO</div>
+        <button id="addNoteButton">Add Note</button>
+    </header>
+    <div id="side-bar">
+        <div id="div1">
+        <button id="title"></button>
+        <button id="addProject">Add Project</button>
+        </div>
+        <div id="projects"></div>
+        
+    </div>
+
+    <div id="container">
+        <div id="projectContent"></div>
+        <form id="addProjectsForm">
+          <button id="closeProjectForm">X</button>
+          <label for="projectName">Project Name:</label> <br><br>
+          <input type="text" id="projectName">
+          <input type="submit" id="submitProject" value="Add">
+        </form>
+
+        <form id="addNotesForm">
+          <input type="button" id="closeForm" value="X">
+          <label for="noteName">Name/Title</label><br>
+          <input type="text" id="noteName"><br><br>
+          <label for="noteDesc">Description</label><br>
+          <textarea type="text" id="noteDesc" rows="4" cols="30"></textarea><br><br>
+          <label for="dueDate">Due Date</label><br>
+          <input type="date" id="dueDate"><br><br>
+          <label for="partOfProject">Project</label><br>
+          <select id="partOfProject" name="projects"></select><br><br>
+           Priority<br>
+          <input type="radio" id="high" name="priority" value="High">
+          <label for="high">High</label>
+          <input type="radio" id="medium" name="priority" value="Medium">
+          <label for="medium">Medium</label>
+          <input type="radio" id="low" name="priority" value="Low">
+          <label for="low">Low</label> <br><br>
+          <input type="submit" value="Add" id="submitNoteButton">
+        </form>
+
+        <form id="noteDetails">
+          <button id="closeNoteDetailsForm">X</button>
+          <label for="noteName">Title</label><br>
+          <input type="text" id="noteTitle" readonly><br><br>
+          <label for="noteDesc">Description</label><br>
+          <textarea type="text" id="noteDescription" rows="4" cols="30" readonly> </textarea><br><br>
+          <label for="dueDate">Due Date</label><br>
+          <input type="text" id="deadline" readonly><br><br>
+          <label for="showProject">Project</label><br>
+          <select id="showProject" >
+          </select><br><br>
+          Priority<br><br>
+          <!--<input type="text" id="priority" readonly>-->
+          <input type="radio" id="setHigh" name="showPriority" value="High" disabled>
+          <label for="setHigh">High</label>
+          <input type="radio" id="setMedium" name="showPriority" value="Medium" disabled>
+          <label for="setMedium">Medium</label>
+          <input type="radio" id="setLow" name="showPriority" value="Low" disabled>
+          <label for="setLow">Low</label><br><br>
+
+          <label for="checked">Done already?</label>
+          <input id="checked" type="checkbox"><br><br>
+          <button id="edit">Edit</button>
+          <button id="saveEdit">Save</button>
+          <button id="deleteNote">Delete</button>
+        </form>
+
+    </div>
+</body>
+</html>
