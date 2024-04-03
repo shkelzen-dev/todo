@@ -5,4 +5,4 @@ This is a TO-DO app that saves your todo's locally in your computer
 
 Try it live : 
 
-https://shkelzen-hub.github.io/todo/dist/
+https://shkelzen-dev.github.io/todo/dist/
